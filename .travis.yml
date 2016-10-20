@@ -15,4 +15,5 @@ script:
   - go test
   - cd config
   - go test
+  - go install
   - nut --init
