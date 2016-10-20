@@ -15,4 +15,4 @@ script:
   - go test
   - cd config
   - go test
-
+  - nut --init
