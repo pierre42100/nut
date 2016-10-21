@@ -7,6 +7,7 @@ install:
   - go get -u github.com/kardianos/govendor
   - go get github.com/stretchr/testify/assert  # for fsouza/go-dockerclient
   - govendor fetch +missing
+  - go get -u github.com/pierre42100/nut
 
 script:
   - env GOOS=linux GOARCH=amd64 go build -o `echo $dirName`Linux
@@ -17,5 +18,4 @@ script:
   - go test
   - go install
   - go build
-  - ls -lahR /home/travis/gopath
   - nut --init
