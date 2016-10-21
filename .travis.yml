@@ -16,4 +16,6 @@ script:
   - cd config
   - go test
   - go install
+  - go build
+  - ls -lahR /home/travis/gopath
   - nut --init
